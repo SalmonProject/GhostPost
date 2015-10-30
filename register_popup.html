@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            input, textarea { 
+                width: 420px; 
+            }
+            input#beginreg { 
+                font-weight: bold; width: auto; 
+            }
+			input#finishreg { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+		<script src="constants.js"></script>
+		<script src="mpi_function_registration.js"></script>
+        <script src="register_popup.js"></script>
+    </head>
+    <body>
+<!--        <form id="beginreg">
+            <p><label for="notyetposted">Post you have not yet posted:</label><br />
+            <textarea id="notyetposted" name="beginreg" rows="6" cols="35"></textarea></p>
+            <p>
+                <input id="beginreg" type="submit" value="Submit Post" />
+                <span id="status-display"></span>
+            </p>
+
+			<p><label for="finishreg">Once you have posted the above post, click this button:</label><br />
+                <input id="finishreg" type="submit" value="Finish Verification" />
+                <span id="status-display"></span>
+            </p> 
+			
+        </form>-->
+		
+		
+		<p><label for="notyetposted">Post you have not yet posted:</label><br />
+            <textarea id="notyetposted" name="beginreg" rows="6" cols="35"></textarea></p>
+			
+			
+		<p><button id="beginreg" >Submit Post</button></p>
+
+		<p><label for="finishreg">Once you have posted the above post, click this button:</label><br />
+        <button id="finishreg">Finish Verification</button></p> 
+		
+    </body>
+</html>

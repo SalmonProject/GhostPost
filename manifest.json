@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "GhostPost",
+    "description": "Monitor for, save, and display deleted Weibo posts.",
+    "version": "0.9.0",
+	"options_ui":
+	{
+		"page": "options.html",
+		"chrome_style": true
+	},
+    "background": 
+    {
+        "scripts": ["jquery-2.1.4.min.js", "constants.js", "event_page_globals.js", "utility_sorted_set.js", "utility_DOM.js", "utility_HTMLstring.js", "post_structs.js",  "gp_storage.js", "testip.js", "gp_communicate.js", "gp_subtle_crypto.js", "parse_weibo.js", "mpi_function_registration.js", "periodic_actions.js"],
+        "persistent": false
+    },
+	
+	"browser_action": 
+    {
+        "default_icon": "ghostpost_icon.png",
+        "default_popup": "register_popup.html"
+    },
+
+    "permissions": 
+    [
+        "alarms",
+        "storage",
+        "https://salmon.cs.illinois.edu:8443/"
+    ],
+
+    "content_scripts":
+    [{
+        "matches": ["https://*.weibo.com/*", "http://*.weibo.com/*"],
+        "js": ["constants.js", "content_script_globals.js", "utility_sorted_set.js", "utility_DOM.js", "utility_HTMLstring.js", "post_structs.js", "gp_storage.js", "parse_weibo.js", "modify_weibo.js", "handle_weibo.js"]
+    }]
+}
