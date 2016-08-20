@@ -30,14 +30,14 @@ function specificAccountWeiboHandler()
 	
 	
 	//DEBUG TEST TRIM
-	let tempPP = [];
-	if(confirm("DEBUG: delete posts on even minutes?"))
-	{
-		for(let ppInd = 0; ppInd < postsPresent.length; ppInd++)
-			if((new Date(postsPresent[ppInd].datePosted)).getUTCMinutes() % 2 > 0)
-				tempPP.push(postsPresent[ppInd]);
-		postsPresent = tempPP;
-	}
+	//let tempPP = [];
+	//if(confirm("DEBUG: delete posts on even minutes?"))
+	//{
+	//	for(let ppInd = 0; ppInd < postsPresent.length; ppInd++)
+	//		if((new Date(postsPresent[ppInd].datePosted)).getUTCMinutes() % 2 > 0)
+	//			tempPP.push(postsPresent[ppInd]);
+	//	postsPresent = tempPP;
+	//}
 	//DEBUG TEST TRIM
 	
 	
