@@ -1,3 +1,9 @@
+# SHUTDOWN
+
+On July 21, 2017, the GhostPost server that has been running at salmon.cs.illinois.edu will shut down. GhostPost could run on any HTTPS server, but I won't have the time in the near-to-moderate term to maintain it. If you would like to take over<sup>1</sup>, please contact me! The Chrome extension client will need to be rebuilt with the new URL, and redistributed. Other than that, no changes are needed.
+
+(1) Concerned users: I will investigate any interested group thoroughly, and require references from trustworthy third parties, to be sure the censor isn't getting involved.
+
 # GhostPost
 Chrome extension for GhostPost (Sina Weibo deleted post recovery)
 
